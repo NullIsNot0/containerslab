@@ -49,10 +49,11 @@ https://blogs.msdn.microsoft.com/stevelasker/2016/06/14/configuring-docker-for-w
 
 
 Free version: remember to add following in the azure portal (in order to deploy containers services):
-microsoft.compute  
-microsoft.ContainerService  
-Microsoft.Storage  
-Microsoft.network  
+
+az provider register -n microsoft.compute  
+az provider register -n microsoft.ContainerService  
+az provider register -n Microsoft.Storage  
+az provider register -n Microsoft.network  
 
 Free account does NOT work in West UK!
 
